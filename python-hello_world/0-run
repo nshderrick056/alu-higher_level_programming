@@ -1,2 +1,2 @@
 #!/bin/bash
-__import__('os').system(f"python3 {__import__('os').environ['PYFILE']}")
+python3 "$PYFILE"
