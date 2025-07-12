@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This module defines the Rectangle class with area comparison functionality."""
+"""This module defines the Rectangle class 
+with area comparison functionality."""
 
 
 class Rectangle:
