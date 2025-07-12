@@ -3,7 +3,8 @@
 
 
 class Rectangle:
-    """A class that defines a rectangle and supports comparison and square creation."""
+    """A class that defines a rectangle and
+    supports comparison and square creation."""
 
     number_of_instances = 0
     print_symbol = "#"
