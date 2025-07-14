@@ -12,6 +12,7 @@ def lookup(obj):
     return dir(obj)
 
 if __name__ == "__main__":
+
     class MyClass1(object):
         pass
 
