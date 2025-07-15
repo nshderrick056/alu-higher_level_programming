@@ -13,4 +13,3 @@ class MyList(list):
         """
         Prints the list in ascending order without modifying the original list.
         """
-        print(sorted(self))
