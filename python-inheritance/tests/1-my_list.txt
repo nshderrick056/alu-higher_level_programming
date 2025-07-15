@@ -9,4 +9,4 @@ my_list.append(5)
 
 print(my_list)         # Original order
 my_list.print_sorted() # Sorted output
-print(my_list)         # Original list should remain unchanged
+print(my_list)         # Original list should remain the same
