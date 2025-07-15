@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# Step 1: Add all changes
 git add .
 
-# Step 2: Prompt for commit message
-read -p "Enter commit message: " commit_msg
+echo "Enter commit message:"
+read msg
 
-# Step 3: Commit
-git commit -m "$commit_msg"
+if [ -z "$msg" ]; then
+  echo "❌ Commit message cannot be empty. Aborting."
+  exit 1
+fi
 
-# Step 4: Push to the current branch
-current_branch=$(git rev-parse --abbrev-ref HEAD)
-git push origin "$current_branch"
+git commit -m "$msg"
+git push
