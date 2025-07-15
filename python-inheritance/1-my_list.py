@@ -10,7 +10,7 @@ class MyList(list):
 
     def print_sorted(self):
         """
-        Prints the list in ascending sorted order
+        Prints the list in an ascending sorted order
         without modifying the original list..
         """
         print(sorted(self))
