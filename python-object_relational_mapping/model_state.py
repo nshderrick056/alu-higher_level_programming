@@ -3,6 +3,7 @@
 This module defines the State class which maps to the 'states' table in MySQL.
 
 It uses SQLAlchemy's ORM features to define a table schema.
+The class State inherits from Base created with declarative_base().
 """
 
 from sqlalchemy import Column, Integer, String
