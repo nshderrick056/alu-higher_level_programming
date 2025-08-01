@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 This script deletes all State objects from the database hbtn_0e_6_usa
-whose name contains the letter 'a'.
+whose name contains the letter 'a' (case-insensitive).
 
 Usage:
     ./13-model_state_delete_a.py <mysql username> <mysql password> <database>
@@ -26,7 +26,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State).filter(State.name.like('%a%')).all()
+    states = session.query(State).filter(State.name.ilike('%a%')).all()
 
     for state in states:
         session.delete(state)
