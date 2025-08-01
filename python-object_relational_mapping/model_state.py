@@ -3,7 +3,6 @@
 This module defines the State class which maps to the 'states' table in MySQL.
 
 It uses SQLAlchemy's ORM features to define a table schema.
-The class State inherits from Base created with declarative_base().
 """
 
 from sqlalchemy import Column, Integer, String
@@ -18,7 +17,7 @@ class State(Base):
 
     Attributes:
         id (int): Primary key, auto-generated unique integer.
-        name (str): Name of the state, a non-nullable string with max length 128.
+        name (str): State name, a non-nullable string (max length: 128).
     """
 
     __tablename__ = 'states'
