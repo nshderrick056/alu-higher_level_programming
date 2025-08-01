@@ -4,8 +4,7 @@ This script deletes all State objects from the database hbtn_0e_6_usa
 whose name contains the letter 'a'.
 
 Usage:
-    ./13-model_state_delete_a.py <mysql username> <mysql password> <database name>
-
+    ./13-model_state_delete_a.py <mysql username> <mysql password> <database>
 The script connects to a MySQL server running on localhost at port 3306
 using SQLAlchemy ORM. It imports the Base and State classes from model_state.
 """
@@ -33,4 +32,3 @@ if __name__ == '__main__':
         session.delete(state)
 
     session.commit()
-
